@@ -1,0 +1,189 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  background-color: #111;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4rem;
+  border-radius: 15px;
+  box-shadow: 3px 3px 20px 2px #f1f1f1;
+  border: 2px solid black;
+  text-align: center;
+  background-color: #222;
+  color: #f1f1f1;
+}
+
+#modal h1 {
+  margin-bottom: 4.5rem;
+  font-size: 2.5em;
+}
+
+#modal input {
+  padding: 0.8em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px #c0c0c0;
+  text-align: center;
+  font-size: 1em;
+}
+
+#modal .submit {
+  margin: 1.5em;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  font-size: 1em;
+  cursor: pointer;
+  color: #111;
+  transition: 0.5s all ease;
+}
+
+#modal .submit:hover {
+  background-color: #111;
+  color: #f1f1f1;
+  border: 4px solid #f1f1f1;
+}
+.close-button {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.svg-icon {
+  width: 1.5em;
+  height: 1.5em;
+  transition: 0.4s all ease;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #f1f1f1;
+}
+
+.svg-icon circle {
+  stroke: #f1f1f1;
+  stroke-width: 1;
+}
+
+.svg-icon path:hover,
+.svg-icon polygon:hover,
+.svg-icon rect:hover {
+  fill: #c0c0c0;
+}
+.svg-icon circle:hover {
+  stroke: #c0c0c0;
+}
+
+.todo-heading {
+  margin: 1em;
+  font-size: 2.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em;
+}
+
+.todo-title {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px #c0c0c0;
+}
+
+.todo-title {
+  margin: 0.6em;
+  padding: 0.4em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.todo-button {
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  font-size: 1em;
+  cursor: pointer;
+  color: #111;
+  transition: 0.5s all ease;
+}
+
+.todo-button:hover {
+  background-color: #111;
+  color: #f1f1f1;
+  border: 4px solid #f1f1f1;
+}
+
+.todos {
+  width: 100%;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo-card {
+  width: 100%;
+  border: 3px solid #f1f1f1;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  display: flex;
+}
+
+.todo-card h1 {
+  width: 90%;
+}
+
+.todo-card button {
+  padding: 0.5em;
+  margin: 0.25em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+
+.todo-card :nth-child(2) {
+  background-color: #ff2323;
+  color: #f1f1f1;
+}
+
+.todo-card :nth-child(2):hover {
+  background-color: #df0d0d;
+}
+
+.todo-card :nth-child(3) {
+  background-color: #ffff17;
+  color: #111;
+}
+
+.todo-card :nth-child(3):hover {
+  background-color: #c9c92b;
+}
